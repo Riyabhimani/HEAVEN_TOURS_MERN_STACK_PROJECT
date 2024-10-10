@@ -1,0 +1,218 @@
+/* Paragraph Styling */
+p {
+  font-size: 1.2rem; 
+  color: #5D6D7E;   
+  line-height: 1.8;  
+  text-align: justify;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #F8F9F9; 
+  border-left: 5px solid #AED6F1; 
+  border-radius: 8px;  
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Paragraph Hover Effect */
+p:hover {
+  background-color: #EAF2F8; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 20px;
+}
+
+/* Individual Image Styling */
+.tour-image {
+  width: 48%; 
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Hover Effect on Images */
+.tour-image:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Destination Name Styling */
+.destination-name {
+  font-family: 'Playfair Display', serif; 
+  font-size: 2.5rem; 
+  font-weight: bold; 
+  color: #2c3e50; 
+  text-align: center; 
+  margin: 5px 0 20px;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); 
+  letter-spacing: 2px; 
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .destination-name {
+      font-size: 2rem; 
+  }
+}
+
+/* Form CSS */
+
+/* Scoped Form Container */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #f3e1c3 , #6fa3ef, #de8c85);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Form Header */
+.form-container h2 {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form Labels */
+.form-container label {
+  font-weight: 600;
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+/* Form Inputs */
+.form-container .form-control {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #bcd0e5;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  transition: border 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Error Messages */
+.form-container .text-danger {
+  font-size: 12px;
+  color: #e74c3c;
+  margin-top: 5px;
+}
+
+/* Submit and Update Buttons */
+.form-container button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+  margin-top: 15px;
+}
+
+.form-container button[type="submit"]:hover {
+  background: linear-gradient(135deg, #0056b3, #00a3e0);
+}
+
+.form-container button[type="submit"]:active {
+  background: linear-gradient(135deg, #004085, #0097d6);
+  transform: translateY(2px);
+}
+
+/* Gender Radio Buttons */
+.form-container input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #007bff;
+}
+
+/* Dropdown Styling */
+.form-container select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23007bff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+}
+
+.form-container select.form-control:focus {
+  border-color: #007bff;
+}
+
+/* Form Group Spacing */
+.form-container .form-group {
+  margin-bottom: 20px;
+}
+
+/* Form Instructions */
+.form-container h4 {
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+}
+
+/* Registered Client List */
+.form-container .mt-2 span {
+  font-size: 16px;
+  color: #495057;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-container button.btn-warning {
+  background-color: #ffcc00;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-container button.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn {
+  cursor: pointer;
+}
